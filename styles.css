@@ -11,6 +11,14 @@ h2 {
     text-align: center;
     background-color: black;
 }
+img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 p {
 size: 14 px;
 color: yellow;
