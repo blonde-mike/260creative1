@@ -3,18 +3,27 @@
 
 <link rel="stylesheet" type="text/css" href="styles.css">
 <script>
-function myFunction(image1, name1) {
-    image1.src = name1;
-}
+    function myFunction(image1, name1) {
+        image1.src = name1;
+        var audio = new Audio('let.mp3');
+        audio.play();
+    }
+    function myFunction2(image1, name1) {
+        image1.src = name1;
+    }
 </script>
 </head>
 
 <body>
-<div>
-    <center>
-        <img src="easyBtn.png" alt="Stunning Seth Johnson Portrait" style="width:192px;height:192px;";
-        onmousedown="myFunction(this,'easyPressedBtn.png')" onmouseup="myFunction(this,'easyBtn.png')">
-</center>
+<h1>Click the button</h1>
+    <h2>Make sure your computer volume is turned up</h2>
+<br />
+<br />
+
+<div id="wrapper" style="width:100%; text-align:center">
+        <img src="easyBtn.png" alt="That was easy button" style="width:500px;height:400px;";
+        onmousedown="myFunction(this,'easyPressedBtn.png')" onmouseup="myFunction2(this,'easyBtn.png')"
+             onmouseout="myFunction2(this,'easyBtn.png')" >
 </div>
 </body>
 </html>
