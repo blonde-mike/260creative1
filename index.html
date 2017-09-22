@@ -3,9 +3,22 @@
 
 <link rel="stylesheet" type="text/css" href="styles.css">
 <script>
+    function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+    }
     function myFunction(image1, name1) {
         image1.src = name1;
-        var audio = new Audio('Matt.mp3');
+        var rray = ['Matt.mp3','Andre.mp3','Alex.mp3','Easy Mike.m4a','Joseph.mp3','Kristen.mp3',
+            'MelanieMarie.mp3', 'speech-audio.mp3', 'Spencer.mp3'];
+        rray = shuffleArray(rray);
+        var musicToPlay = rray[1];
+        var audio = new Audio('audio/' + musicToPlay);
         audio.play();
     }
     function myFunction2(image1, name1) {
@@ -20,7 +33,7 @@
 
 
 <div id="wrapper" style="width:100%; text-align:center">
-        <img src="easyBtn.png" alt="That was easy button" style="width:400px;height:250px;";
+        <img src="easyBtn.png" alt="That was easy button" style="width:450px;height:300px;";
         onmousedown="myFunction(this,'easyPressedBtn.png')" onmouseup="myFunction2(this,'easyBtn.png')"
              onmouseout="myFunction2(this,'easyBtn.png')" >
 </div>
