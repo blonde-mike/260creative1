@@ -1,15 +1,23 @@
 body {
-background-color: green;
+background-color: #1479ea;
 }
-h1 {
-color: orangered;
+#title {
+color: #ffffff;
 text-align: center;
-background-color: black;
+text-shadow: 2px 2px #000000;
+font-family: arial;
 }
-h2 {
-    color:red;
+#volume {
+    color:#ea6914;
     text-align: center;
-    background-color: black;
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: inline;
+    font-family: verdana;
+    text-shadow: 2px 2px #ffffff;
 }
 img {
     position: absolute;
